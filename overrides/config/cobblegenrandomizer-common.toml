@@ -1,0 +1,25 @@
+
+#General settings
+[general]
+	#Use config instead of datapack
+	use_config = true
+
+	#List settings
+	#Syntax: ["modid:block|weight"]
+	#Example: ["minecraft:stone|2","minecraft:dirt|1"]
+	#Forge tags are supported
+	[general.lists]
+		#Basalt gen
+		block_list_basalt = ["minecraft:basalt|100"]
+		#Cobble gen
+		block_list_cobble = ["minecraft:cobblestone|100"]
+		#Stone gen
+		block_list_stone = ["minecraft:stone|100"]
+
+		#Custom settings
+		[general.lists.custom]
+			# Generator mechanics inspired by Above & Beyond.
+			custom_generators = [
+				["stone", "minecraft:bedrock", ["minecraft:andesite|25", "minecraft:granite|25", "minecraft:diorite|25"]]
+			]
+
